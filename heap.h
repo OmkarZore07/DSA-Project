@@ -24,28 +24,28 @@ struct Heap
 };
 
 
-/*Creates Heap*/
+
 void heap_create(struct Heap**);
 
-/*Destroys the Heap*/
+
 void heap_destroy(struct Heap*);
 
-/*Destroys recursively each node*/
+
 void heap_destroy_rec(struct HeapNode*);
 
-/*Inserts a  new element into the heap*/
+
 void heap_insert(struct Heap*,char*,float);
 
-/*Deletes an element from the heap*/
+
 void heap_delete(struct Heap*,char*,float);
 
-/*Adds a new node */
+
 void heap_add_node(struct Heap*,struct HeapNode** ,struct HeapNode*,char,char*,float );
 
-/*Extracts Root's value*/
+
 int extract_root(struct Heap* heap,struct aux_struct*);
 
-/*Shifts up element until the heap property is satisfied*/
+
 void shift_up(struct Heap*,struct HeapNode*);
 
 /*Shifts down element until the heap property is satisfied*/
